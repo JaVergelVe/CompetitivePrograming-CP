@@ -12,7 +12,7 @@ public class EdadEnDias {
         
         int Anos = Edad/365;
         int Meses = (Edad%365)/30;
-        int Dias = (Edad%30)/2;
+        int Dias = (Edad%365)%30;
         
         System.out.println(Anos + " ano(s)");
         System.out.println(Meses + " mes(es)");
